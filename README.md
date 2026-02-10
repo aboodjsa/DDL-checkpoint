@@ -110,7 +110,7 @@ ADD OrderDate DATE DEFAULT SYSDATE;
 
 # ✅ How to Run
 
-1. Open Oracle SQL Developer / SQL*Plus / any SQL tool.
+1. Open Oracle SQL Developer / SQL*Plus / any SQL Online tool.
 2. Run the table creation scripts.
 3. Run the ALTER TABLE commands.
 
