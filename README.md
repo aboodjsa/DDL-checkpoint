@@ -1,14 +1,14 @@
-## 📌 Relational Database Model – SQL Checkpoint
+##  Relational Database Model – SQL Checkpoint
 
-This project implements a relational database model using **SQL** with constraints based on the given checkpoint requirements.
+This project implements a relational database model using **SQL** with constraints based om the actual given checkpoint requirements.
 
 ---
 
-# 🗂️ Database Structure
+# Database Structure
 
 The database contains **three tables**:
 
-### 1️⃣ Customer Table
+###  Customer Table
 
 Stores customer information.
 
@@ -20,7 +20,7 @@ Stores customer information.
 
 ---
 
-### 2️⃣ Product Table
+###  Product Table
 
 Stores product information.
 
@@ -32,7 +32,7 @@ Stores product information.
 
 ---
 
-### 3️⃣ Orders Table
+###  Orders Table
 
 Stores orders made by customers.
 
@@ -43,11 +43,11 @@ Stores orders made by customers.
 | Quantity     | NUMBER       | -                      |
 | Total_amount | NUMBER       | -                      |
 
-🔹 Composite Primary Key: (Customer_id, Product_id)
+- Composite Primary Key: (Customer_id, Product_id)
 
 ---
 
-# 🧾 SQL Implementation
+#  SQL Implementation
 
 ```sql
 -- CUSTOMER TABLE
@@ -81,16 +81,16 @@ CREATE TABLE Orders (
 
 ---
 
-# ➕ Adding New Columns
+#  Creating New Columns
 
-### Add Category column to Product table
+### Create Category column in Product table
 
 ```sql
 ALTER TABLE Product
 ADD Category VARCHAR2(20);
 ```
 
-### Add OrderDate column to Orders table with default value
+### Create OrderDate column in Orders table with default value
 
 ```sql
 ALTER TABLE Orders
@@ -99,26 +99,22 @@ ADD OrderDate DATE DEFAULT SYSDATE;
 
 ---
 
-# 🧠 Notes
+#  Notes
 
-* **Primary Keys** uniquely identify records.
-* **Foreign Keys** link tables together.
-* **Composite Primary Key** means two columns together uniquely identify a record.
-* `SYSDATE` automatically stores the current system date.
-
----
-
-# ✅ How to Run
-
-1. Open Oracle SQL Developer / SQL*Plus / any SQL Online tool.
-2. Run the table creation scripts.
-3. Run the ALTER TABLE commands.
+* **Primary Key:** Unique identifier for each record.
+* **Foreign Key:** Link to another table.
+* **Composite Primary Key:** Two columns combined identify unique record.
+* `SYSDATE`: Automatically adds current date.
 
 ---
 
-# 👨‍💻 Author
+#  How to Execute
 
-**Abood Jamal**
+1. Open Oracle SQL Developer / SQL*Plus / SQL Online etc..
+2. Execute the table creation queries.
+3. Execute the ALTER TABLE statements.
+
+---
 
 Database Checkpoint Project
 
